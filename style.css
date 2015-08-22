@@ -1,0 +1,108 @@
+#masthead .main-menu > ul > li > a {
+padding: 15px 5px 15px 15px;
+display: block;
+float: left;
+}
+/* homepage relaunch */
+@media only screen and (min-width: 801px) {
+.mompreneurs .featured-posts article .entry-image,
+.mompreneurs figure,
+.network .featured-posts article .entry-image,
+.network figure {
+height:auto !important;
+max-height:500px;
+background-color:transparent;
+}
+}
+
+.home-section .infobox {
+    border: 2px solid #414141;
+    padding: 40px;
+    font-size: 1em;
+text-align:left;
+}
+
+.content-over-image figure:before {
+    content: "";
+    display: block;
+    position: absolute;
+       top: 24px;
+    bottom: 6px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    -webkit-transition: opacity .4s linear;
+    -moz-transition: opacity .4s linear;
+    -ms-transition: opacity .4s linear;
+    -o-transition: opacity .4s linear;
+    transition: opacity .4s linear;
+    -webkit-backface-visibility: hidden;
+}
+
+.content-over-image:hover figure:before {
+opacity: .7;background-color:#000;
+  -webkit-transition: opacity .4s linear;
+    -moz-transition: opacity .4s linear;
+    -ms-transition: opacity .4s linear;
+    -o-transition: opacity .4s linear;
+    transition: opacity .4s linear;
+}
+
+
+article.content-over-image {    margin-bottom: 0;
+    position: relative;
+    z-index: 0;}
+.content-over-image header {
+   position: absolute;
+    top: 33%;
+    z-index: 5;
+    width: 100%;
+}
+.content-over-image a, .content-over-image #submit {color:white}
+
+.content-over-image #submit {
+    color: #fff;
+    background: none;
+    padding: 12px 30px 10px;
+    border: 3px solid #fff !important;
+    position: relative;
+}
+.mompreneurs article.content-over-image {margin: 30px 0 30px 30px;}
+.mompreneurs {margin-top: -55px;}
+
+article.page img {
+    width: 100%;
+    height: auto !important;
+}
+
+
+.col-8 {width:66.6666666%;float:left}
+.col-5{width:50%;float:left}
+.col-4{width:33.333333%;float:left}
+
+/* main breaking point */
+@media(max-width:770px){
+.col-8,.col-4,.col-5,.col-6{width:100%}
+.mompreneurs article.content-over-image { margin: 30px 0 0px 0px;}
+}
+
+
+.col-4 .entries article {
+    margin-bottom: 0;
+    text-align: center;
+    width: 97%;
+}
+.format-bg {
+    padding: 30px;
+    box-sizing: border-box;
+}
+@media only screen and (min-width: 751px) {
+.format-posts.format-bg .entry-image {
+    height: 195px;
+}
+.format-bg .hentry {
+    float: left;
+    width: 29%;
+    margin-left: 3.3%;
+}
+}
