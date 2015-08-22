@@ -21,9 +21,14 @@ background-color:transparent;
     font-size: 1em;
 text-align:left;
 }
+.home-section .infobox strong {
+font-size: 1.3em;
+    color: #252628;
+}
 
 .content-over-image figure:before {
     content: "";
+    background: rgba(0,0,0,0.4);
     display: block;
     position: absolute;
        top: 24px;
@@ -52,6 +57,7 @@ opacity: .7;background-color:#000;
 article.content-over-image {    margin-bottom: 0;
     position: relative;
     z-index: 0;}
+
 .content-over-image header {
    position: absolute;
     top: 33%;
@@ -84,6 +90,8 @@ article.page img {
 @media(max-width:770px){
 .col-8,.col-4,.col-5,.col-6{width:100%}
 .mompreneurs article.content-over-image { margin: 30px 0 0px 0px;}
+.content-over-image figure:before {top:27px}
+.col-4 .entries article{width:100%}
 }
 
 
